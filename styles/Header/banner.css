@@ -11,7 +11,7 @@ header {
     align-items: center;
     gap: 50px;
     position: relative;
-    filter: brightness(0.4);
+    filter: brightness(0.3);
 }
 
 header::before {

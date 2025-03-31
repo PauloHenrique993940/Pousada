@@ -1,12 +1,16 @@
 footer {
-    border-top: 1px solid #CDBEBE;
+    border-top: 1px solid var(--backgroundFooter);
     width: 1200px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+    height: 30vh;
     
 }
 
+footer div {
+    display: flex;
+    align-items: flex-start;
+}
 .midiaLinks {
     display: flex;
     flex-direction: column;
@@ -26,6 +30,8 @@ footer {
     margin: 0;
 }
 
+
+
 .imgLinkFacebbok {
     height: 30px;
     width: 30px;
@@ -34,8 +40,11 @@ footer {
 
 @media(max-width:  768px){
     footer {
-        flex-direction: column;
-        justify-content: center;
+        display: block;
         width: 70%;
+    }
+
+    footer div {
+        display: block;
     }
 }

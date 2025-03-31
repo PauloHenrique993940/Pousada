@@ -4,6 +4,8 @@
     --CorPrincipal: #000000;
     --CorBranca: #FFFFFF;
     --backgroundForms: #e6e6e6;
+    --backgroundColorSecaoCard: #f3f3f3;
+    --backgroundFooter: #002800;
 }
 * {
     margin: 0;
