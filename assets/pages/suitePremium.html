@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pòusada Encanto da Serra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/styles/stylesReserva/main.css">
+    <link rel="stylesheet" href="/styles/global.css">
+</head>
+
+<body>
+    <header class="HeaderReserva">
+    </header>
+    <main>
+        <section class="ContainerReserva">
+            <div>
+                <h1>Suíte Premium</h1>
+                <hr>
+            </div>
+            <div class="star">
+                <img src="/assets/imagesreserva/Star 1.png" alt="Star">
+                <img src="/assets/imagesreserva/Star 1.png" alt="Star">
+                <img src="/assets/imagesreserva/Star 1.png" alt="Star">
+                <img src="/assets/imagesreserva/Star 1.png" alt="Star">
+            </div>
+
+        </section>
+        <section class="ContainerReserva">
+            <div class="container">
+                <img src="/assets/imagesreserva/Mask group.png" alt="Quarto Villa Kumara" class="imgreserva">
+                <div class="Quadro">
+                    <div>
+                        <img src="/assets/imagesreserva/suite3.png" alt="Vista Villa Kumara" class="wImage">
+                        <img src="/assets/imagesreserva/Café da Manhã em uma Suíte nas montanhas 1.png"
+                            alt="Cozinha Villa Kumara">
+
+                    </div>
+                    <div>
+                        <img src="/assets/imagesreserva/100+ Traumhafte Outdoor Küchen – Gestaltungsideen und praktische Tipps 1.png"
+                            class="wImage" alt="Vista Villa Kumara">
+                        <img src="/assets/imagesreserva/Café da Manhã em uma Suíte nas montanhas 1.png"
+                            alt="Cozinha Villa Kumara">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ContainerReserva">
+            <div class="Container">
+                <p>
+                    A Suíte Premium da Pousada Encanto da Serra combina conforto e sofisticação.
+                    Com um ambiente amplo e aconchegante, oferece cama king-size, banheira de hidromassagem
+                    e sacada privativa com vista para a natureza. Acomodação ideal para quem busca relaxamento
+                    e exclusividade, conta com ar-condicionado, Wi-Fi gratuito e café da manhã incluso.
+                </p>
+                <h1>Comodidades nos quartos</h1>
+                <div class="ComodidadesContainer"">
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i> Cortinas</li>
+                        <li><i class="fa-solid fa-fan"></i> Ar condicionado</li>
+                        <li><i class="fa-solid fa-broom"></i> Serviço de limpeza</li>
+                        <li><i class="fa-solid fa-check"></i> TV a cabo/por satélite</li>
+                    </ul>
+                    <ul>
+                        <li><i class="fa-solid fa-shirt"></i> Roupões</li>
+                        <li><i class="fa-solid fa-chair-office"></i> Escrivaninha</li>
+                        <li><i class="fa-solid fa-mug-saucer"></i> Cafeteira/chaleira</li>
+                        <li><i class="fa-solid fa-bath"></i> Banheira/chuveiro</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="Forms">
+                <form id="reservaForm">
+                    <h1>Verifique a disponibilidade:</h1>
+                    <div class="form-group">
+                        <label for="entrada">Entrada</label>
+                        <input type="date" id="entrada" name="entrada" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="saida">Saída</label>
+                        <input type="date" id="saida" name="saida" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hospedes">Quantidade de Hóspedes</label>
+                        <input type="number" id="hospedes" name="hospedes" value="0" min="0">
+                        <p id="erroHospedes" style="color: red; display: none;">Selecione pelo menos 1 hóspede.</p>
+                    </div>
+                    <button type="submit" class="btn-reservar">RESERVAR</button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+
+
+    <script src="/script/reserva.js"></script> 
+</body>
+
+</html>

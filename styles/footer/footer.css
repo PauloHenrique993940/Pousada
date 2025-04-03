@@ -1,9 +1,10 @@
 footer {
     border-top: 1px solid var(--backgroundFooter);
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     height: 30vh;
+    width: 100%;
     
 }
 

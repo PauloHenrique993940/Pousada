@@ -3,8 +3,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    margin-top: 90px;
+    margin-top: 40px;
     width: 100%;
     
 }
@@ -18,12 +17,13 @@ section{
 }
 .cardFlex {
     width: 100%;
+    gap: 20px;
 
 
 }
 .Card {
     width: 384px;
-    height: 480px;
+    height: 500px;
     padding: 12px;
     border: 2px solid transparent;
     border-radius: 20px;
@@ -39,6 +39,50 @@ section{
     border: 2px solid orangered !important;
 }
 
+.link-reserva {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+h3 {
+    position: relative;
+    display: inline-block;
+}
+
+h3::after {
+    content: "Clique para mais informações";
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+h3:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.link-reserva:hover {
+    color: #430000;
+}
+
+
+h3:hover {
+    transition: border-bottom 0.3s ease-in-out;
+
+}
+
+
 
 .Card img {
     width: 100%;
@@ -49,12 +93,11 @@ section{
 
 }
 
-
 h1  {
 
     text-align: center;
     margin-top: 60px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 700;
     color: #002800;
 }

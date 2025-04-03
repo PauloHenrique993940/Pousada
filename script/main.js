@@ -57,3 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     reservarBtn.addEventListener("click", validarFormulario);
 });
+
+
+
