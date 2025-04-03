@@ -1,9 +1,27 @@
 @import url("/styles/global.css");
 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(230, 233, 236);
+}
+
+
+
 .HeaderReserva {
     width: 100%;
-    background-color: var(--laranja);
-    height: 140px;
+    background: linear-gradient(to bottom, #003366, #90EE90);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
 
 .ContainerReserva {
@@ -14,6 +32,54 @@
 
 }
 
+/* Header links */
+nav {
+    max-width: 1200px;
+    text-align: center;
+}
+.logo {
+    height: 40px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Menu Fim */
 .ContainerReserva hr {
     background-color: #FF6600;
     height: 5px;
@@ -121,7 +187,7 @@ input[type="number"] {
 }
 
 .btn-reservar {
-    background-color: var(--laranja);
+    background-color: #A0522D;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -139,7 +205,7 @@ input[type="number"] {
 /* Comodidades nos quartos */
 
 .ComodidadesContainer {
-   display: flex;
+    display: flex;
 }
 
 .ComodidadesContainer ul li {
@@ -151,6 +217,6 @@ input[type="number"] {
     text-transform: capitalize;
 }
 
-.ComodidadesContainer ul li  i {
+.ComodidadesContainer ul li i {
     margin-right: 10px;
 }
