@@ -191,7 +191,7 @@ form {
 }
 
 .campo button {
-    background-color: #A0522D;
+    background-color: var(--laranja);
     color: var(--CorBranca);
     height: 40px;
     border: none;
