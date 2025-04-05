@@ -22,12 +22,11 @@
   <header class="HeaderReserva animate__animated animate__fadeInDown">
     <nav>
       <ul class="nav-links">
-        <li><img src="/assets/logo/logoPousada.png" alt="Logo da Pousada Canto da Serra" class="logo"></li>
+        <li><img src="/assets/logo/logoPousada.png" alt="Logo da Pousada Canto da Serra" class="logo" /></li>
         <li><a href="#sobre">Home</a></li>
-        <li><a href="#acomodacoes">Acomodações</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#acomodacoes">Suíte Premium</a></li>
+        <li><a href="#servicos">Suíte Essencial</a></li>
+        <li><a href="#galeria">Suíte Grand Luxe</a></li>
       </ul>
     </nav>
   </header>
@@ -48,7 +47,7 @@
 
     <section class="ContainerReserva animate__animated animate__fadeInUp">
       <div class="container">
-        <img src="/assets/imagesreserva/Mask group.png" alt="Quarto Villa Kumara" class="imgreserva animate__animated animate__fadeInUp">
+        <img src="/assets/suites/suite_esssencial.jpg" alt="Quarto Villa Kumara" class="imgreserva animate__animated animate__fadeInUp imgEssencialSuite" ;">
         <div class="Quadro">
           <div>
             <img src="/assets/imagesreserva/suite3.png" alt="Vista Villa Kumara" class="wImage animate__animated animate__zoomIn">
@@ -65,10 +64,11 @@
     <section class="ContainerReserva">
       <div class="Container">
         <p class="animate__animated animate__fadeInRight">
-          A Suíte Premium da Pousada Encanto da Serra combina conforto e sofisticação.
-          Com um ambiente amplo e aconchegante, oferece cama king-size, banheira de hidromassagem
-          e sacada privativa com vista para a natureza. Acomodação ideal para quem busca relaxamento
-          e exclusividade, conta com ar-condicionado, Wi-Fi gratuito e café da manhã incluso.
+          A Suíte Essencial da Pousada Encanto da Serra foi cuidadosamente planejada para proporcionar uma estadia inesquecível, unindo conforto e elegância.
+           Com um espaço amplo e acolhedor, essa acomodação conta com uma cama king-size, banheira de hidromassagem e
+           uma sacada privativa com uma vista encantadora da natureza.
+          Perfeita para quem deseja relaxar com exclusividade, a Suíte Essencial oferece ar-condicionado, 
+          Wi-Fi gratuito e café da manhã incluso, garantindo comodidade e bem-estar em todos os momentos da sua hospedagem.
         </p>
         <h1 class="animate__animated animate__fadeIn">Comodidades nos quartos</h1>
         <div class="ComodidadesContainer animate__animated animate__fadeInUp">
@@ -107,8 +107,25 @@
         </form>
       </div>
     </section>
+
+    
+    
   </main>
 
   <script src="/script/reserva.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: true,
+        margin: 0
+      });
+    });
+  </script>
 </body>
 </html>

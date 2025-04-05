@@ -6,29 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pousada Encanto da Serra</title>
 
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter&family=Montserrat&family=Roboto+Mono&family=Roboto&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet" />
-
-  <!-- Font Awesome -->
+  <!-- Ícones FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-  <!-- Estilos personalizados -->
+  <!-- Seus estilos -->
   <link rel="stylesheet" href="/styles/stylesReserva/main.css" />
   <link rel="stylesheet" href="/styles/global.css" />
 </head>
 
 <body>
-  <header class="HeaderReserva animate__animated animate__fadeInDown">
+  <header class="HeaderReserva">
     <nav>
       <ul class="nav-links">
         <li><img src="/assets/logo/logoPousada.png" alt="Logo da Pousada Canto da Serra" class="logo" /></li>
@@ -42,9 +35,9 @@
   </header>
 
   <main>
-    <section class="ContainerReserva animate__animated animate__fadeIn">
+    <section class="ContainerReserva animate-on-scroll animate__animated animate__fadeInDown">
       <div>
-        <h1>Suíte Premium</h1>
+        <h1>Suíte Grand Luxe</h1>
         <hr />
       </div>
       <div class="star">
@@ -55,27 +48,23 @@
       </div>
     </section>
 
-    <section class="ContainerReserva animate__animated animate__fadeIn">
+    <section class="ContainerReserva animate-on-scroll animate__animated animate__zoomIn">
       <div class="container">
         <img src="/assets/imagesreserva/Mask group.png" alt="Quarto Villa Kumara" class="imgreserva" />
         <div class="Quadro">
           <div>
             <img src="/assets/imagesreserva/suite3.png" alt="Vista Villa Kumara" class="wImage" />
-            <img src="/assets/imagesreserva/Café da Manhã em uma Suíte nas montanhas 1.png"
-              alt="Cozinha Villa Kumara" />
+            <img src="/assets/imagesreserva/Café da Manhã em uma Suíte nas montanhas 1.png" alt="Cozinha Villa Kumara" />
           </div>
           <div>
-            <img
-              src="/assets/imagesreserva/100+ Traumhafte Outdoor Küchen – Gestaltungsideen und praktische Tipps 1.png"
-              class="wImage" alt="Vista Villa Kumara" />
-            <img src="/assets/imagesreserva/Café da Manhã em uma Suíte nas montanhas 1.png"
-              alt="Cozinha Villa Kumara" />
+            <img src="/assets/imagesreserva/100+ Traumhafte Outdoor Küchen – Gestaltungsideen und praktische Tipps 1.png" class="wImage" alt="Vista Villa Kumara" />
+            <img src="/assets/imagesreserva/Café da Manhã em uma Suíte nas montanhas 1.png" alt="Cozinha Villa Kumara" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ContainerReserva animate__animated animate__fadeIn">
+    <section class="ContainerReserva animate-on-scroll animate__animated animate__fadeInUp">
       <div class="Container">
         <p>
           A Suíte Premium da Pousada Encanto da Serra combina conforto e sofisticação.
@@ -100,7 +89,7 @@
         </div>
       </div>
 
-      <div class="Forms animate__animated animate__fadeInUp">
+      <div class="Forms animate-on-scroll animate__animated animate__fadeInRight">
         <form id="reservaForm">
           <h1>Verifique a disponibilidade:</h1>
           <div class="form-group">
@@ -120,43 +109,23 @@
         </form>
       </div>
     </section>
-
-    <section class="ContainerRecomendacao animate__animated animate__fadeInUp">
-      <div style="flex-direction: column;">
-        <h1>Suítes recomendadas</h1>
-        <hr />
-      </div>
-
-      <div class="owl-carousel owl-theme modal">
-        <div class="carousel-item flex-suitesImg">
-          <img src="/assets/SuitesRecomendadas/suite1.jpg" alt="Imagem 1" />
-        </div>
-        <div class="carousel-item flex-suitesImg">
-          <img src="/assets/SuitesRecomendadas/suite2.jpg" alt="Imagem 2" />
-        </div>
-        <div class="carousel-item flex-suitesImg">
-          <img src="/assets/SuitesRecomendadas/suite3.webp" alt="Imagem 3" />
-        </div>
-        <div class="carousel-item flex-suitesImg">
-          <img src="/assets/SuitesRecomendadas/suite4.jpg" alt="Imagem 4" />
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- Scripts -->
   <script src="/script/reserva.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Script para ativar animação ao rolar a tela -->
   <script>
-    $(document).ready(function () {
-      $(".owl-carousel").owlCarousel({
-        items: 1,
-        loop: true,
-        nav: true,
-        dots: true,
-        margin: 0
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__fadeIn');
+          entry.target.classList.add('animate__animated');
+        }
       });
+    });
+
+    document.querySelectorAll('.animate-on-scroll').forEach(element => {
+      observer.observe(element);
     });
   </script>
 </body>
