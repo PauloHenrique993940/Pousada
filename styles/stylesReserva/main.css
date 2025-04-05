@@ -111,12 +111,13 @@ nav a:hover {
 }
 
 .Container p {
-    width: 619px;
+    width: 650px;
     height: 255px;
     font-size: 18px;
     color: #3E3E3E;
     line-height: 28px;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 /* Formulário */
