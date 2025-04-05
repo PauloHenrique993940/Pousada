@@ -25,8 +25,9 @@ nav {
     max-width: 1200px;
     text-align: center;
 }
+
 .logo {
-    height: 40px; 
+    height: 40px;
 }
 
 nav ul {
@@ -192,42 +193,49 @@ input[type="number"] {
 
 /* Seção suítes Recomendadas */
 
-.ContainerRecomendacao {
-    display: flex;
-    margin-top: 40px;
+.ContainerCarrossel {
     width: 100%;
     max-width: 1200px;
-    flex-direction: column;
+    margin-top: 40px;
 }
 
-.ContainerRecomendacao h1 {
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
+.ContainerCarrossel h1 {
+    color: #000000;
+    font-size: 25px;
     height: 54px;
-    margin-bottom: 0;
-    color: #002800;
-    padding-bottom: 0;
+    font-weight: 700;
+    width: 400px;
 }
 
-.ContainerRecomendacao hr {
+.ContainerCarrossel hr {
     background-color: #FF6600;
     height: 5px;
     background-image: linear-gradient(to right, #FF6600, #FFCC00);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     width: 91px;
-    margin-top: 0;
+    margin-bottom: 30px;
 }
 
-.modal {
+.suites-carousel img {
     width: 100%;
-    display: flex;
-    margin-top: 20px;
-}
-.flex-suites {
-    display: flex;
-    flex-direction:row;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.modal img {
-    height: 400px;
+.owl-carousel .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+}
+
+.owl-carousel .owl-nav button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 50%;
 }

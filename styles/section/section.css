@@ -1,26 +1,29 @@
 @import url("/styles/global.css");
-section{
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
     width: 100%;
-    
+
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
     .cardFlex {
         flex-direction: column;
         width: 100%;
     }
-    
+
 }
+
 .cardFlex {
     width: 100%;
     gap: 20px;
 
 
 }
+
 .Card {
     width: 384px;
     height: 500px;
@@ -31,7 +34,7 @@ section{
 }
 
 .Card:hover {
-    border: 2px solid #ff6600; 
+    border: 2px solid #ff6600;
 }
 
 
@@ -93,13 +96,13 @@ h3:hover {
 
 }
 
-h1  {
+h1 {
 
     text-align: center;
     margin-top: 60px;
     font-size: 30px;
     font-weight: 700;
-    color: #002800;
+    color: var(--CorPrincipal);
 }
 
 
@@ -109,6 +112,11 @@ h1  {
     color: #000000;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.Card h3 a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .Card p {

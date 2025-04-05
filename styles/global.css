@@ -3,7 +3,7 @@
     --laranja: #FF6600;
     --CorPrincipal: #000000;
     --CorBranca: #FFFFFF;
-    --backgroundForms: #fffbfb;
+    --backgroundForms: #AFCDEB;
     --backgroundColorSecaoCard: #f3f3f3;
     --backgroundFooter: #002800;
 }
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: var(--CorBranca);
+    background-color: #DDEEFF;
 }
 
 main {
