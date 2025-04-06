@@ -331,6 +331,11 @@ img {
         margin-bottom: 15px;
     }
 
+    footer ul li {
+        width: 200px;
+
+    }
+
     footer ul:last-child {
         margin-bottom: 0;
     }
@@ -344,5 +349,10 @@ img {
     .imgLink,
     .imgLinkFacebbok {
         margin: 0 10px;
+    }
+
+    .footer ul  li {
+        font-size: 15px;
+        width: 200px;
     }
 }

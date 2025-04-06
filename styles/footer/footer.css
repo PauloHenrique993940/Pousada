@@ -8,6 +8,10 @@ footer {
     
 }
 
+footer ul  li {
+    font-size: 15px;
+}
+
 footer div {
     display: flex;
     align-items: flex-start;
@@ -48,4 +52,6 @@ footer div {
     footer div {
         display: block;
     }
+
+
 }
