@@ -175,23 +175,25 @@ form {
 }
 .campo {
     margin-bottom: 15px;
-    text-align: center;
+    text-align: left;
     margin-top: 30px;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 .campo label {
-    display: block;
+    display: flex;
     margin-bottom: 5px;
     text-align: left;
 }
 
 .campo input,
 .campo select {
-    width: 90%;
-    padding: 8px;
+    width: 350px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    text-align: left;
+    padding: 8px;
 }
 
 .campo :placeholder {
@@ -206,7 +208,7 @@ form {
     width: auto 0;
 }
 
-.campo button {
+.campoButon button {
     background-color: var(--laranja);
     color: var(--CorBranca);
     height: 40px;
@@ -217,8 +219,13 @@ form {
     text-transform: uppercase;
     font-weight: 600;
     font: 20px;
+
 }
 
+.campoButon {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .campo button:hover {
     background-color: #f57c00;
 }
