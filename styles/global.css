@@ -66,118 +66,239 @@ img {
     }
 }
 
+/* Estilos gerais (para telas maiores) - Mantenha seus estilos existentes aqui */
+
+/* ... seus estilos de banner.css, section.css, sobre.css, footer.css ... */
+
+/* Media Query para telas com largura máxima de 425px */
 @media (max-width: 425px) {
+    /* Estilos para telas de 425px e menores */
+
+    /* Header */
     header {
         flex-direction: column;
+        /* Empilha a logo e o botão */
         align-items: center;
-        padding: 10px;
-        text-align: center;
+        /* Centraliza os itens */
+        padding: 15px;
     }
 
-    header img {
-        max-width: 80%;
-        height: auto;
+    header>div {
+        margin-bottom: 10px;
+        /* Espaço entre a logo e o botão */
     }
 
     .BotaoReserva {
-        margin-top: 10px;
         width: 90%;
-        font-size: 14px;
+        /* O botão ocupa mais largura */
+        padding: 10px 15px;
+        font-size: 1em;
     }
 
+    /* Main - Título e Subtítulo */
+    main h1 {
+        font-size: 1.8em;
+        text-align: center;
+        padding: 15px;
+    }
+
+    main hr {
+        margin: 10px auto 20px;
+        /* Centraliza a linha */
+        width: 70%;
+    }
+
+    /* Section de Cards */
     .cardFlex {
         flex-direction: column;
+        /* Empilha os cards */
         align-items: center;
-        gap: 16px;
-        padding: 0 10px;
+        /* Centraliza os cards */
+        padding: 20px;
     }
 
     .Card {
-        width: 100%;
-        max-width: 350px;
-        height: auto;
+        width: 90%;
+        /* Cards ocupam mais largura */
+        margin-bottom: 20px;
     }
 
     .Card img {
         width: 100%;
+        /* Imagens dos cards ocupam toda a largura do container */
         height: auto;
-        border-radius: 10px;
+        /* Mantém a proporção da imagem */
     }
 
+    .Card h3 {
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .Card p {
+        font-size: 0.9em;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Section Sobre */
     .container {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
+        padding: 20px;
     }
 
-    .sectionDepoiments {
-        align-items: center;
-        justify-content: center;
+    .quadro {
+        flex-direction: column;
+        /* Empilha imagem e texto */
+        margin-bottom: 30px;
+    }
+
+    .imagem,
+    .texto {
         width: 100%;
+        /* Ocupam toda a largura */
+    }
+
+    .texto {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .texto h1 {
+        font-size: 1.5em;
+    }
+
+    .texto hr {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .imagem img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Section Depoimentos */
+    .sectionDepoiments {
+        padding: 20px;
     }
 
     .depoimentos {
-        margin: 40px;
-    }
-
-    .depoimento {
-        padding: 20px;
-        display: flex;
         flex-direction: column;
+        /* Empilha os depoimentos */
+        align-items: center;
     }
 
-    .avatar img {
-        display: block;
-        margin: 0 auto;
-    }
+    
 
-    .texto p {
-        text-align: left;
-        font-size: 20px;
+    .avatar {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 10px;
     }
 
     .Perfiltexto p {
-        font-size: 10px;
-        font-weight: 100;
-        margin-bottom: 10px;
+        font-size: 0.4em;
+        margin-bottom: 3px;
+        text-align: center;
+    }
+
+    .Perfiltexto .autor {
+        font-size: 0.75em;
+        padding-top: 10px;
+        padding-left: 50%;
+    }
+
+    /* Section Reserva */
+    .sectionReserv {
+        padding: 20px;
     }
 
     .formulario {
-        width: 100%;
-    }
-
-    form {
-        width: 100%;
-        padding: 12px;
-        box-sizing: border-box;
+        width: 95%;
+        /* Formulario ocupa mais largura */
+        margin: 20px auto;
+        padding: 15px;
     }
 
     .formTable {
-        display: flex;
         flex-direction: column;
-        gap: 16px;
-        margin-bottom: 16px;
-        width: 100%;
+        /* Empilha os campos do formulário */
     }
 
     .campo {
         width: 100%;
-        display: flex;
+        /* Campos do formulário ocupam toda a largura */
+        margin-bottom: 15px;
+    }
+
+    .formTable .campo:last-child {
+        margin-bottom: 0;
+    }
+
+    .campo label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .campo input[type="text"],
+    .campo input[type="email"],
+    .campo input[type="tel"],
+    .campo input[type="date"],
+    .campo select {
+        width: calc(100% - 12px);
+        /* Ajuste para a borda e padding */
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .formulario .campo button[type="submit"] {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    /* Section Localização */
+    .Local {
+        padding: 20px;
+    }
+
+    .inframe {
+        width: 100%;
+        /* O iframe ocupa toda a largura */
+    }
+
+    .inframe iframe {
+        width: 100%;
+        height: 300px;
+        /* Altura ajustada para telas menores */
+    }
+
+    /* Footer */
+    footer>div {
         flex-direction: column;
+        /* Empilha as colunas do footer */
+        padding: 20px;
+        text-align: center;
     }
 
-    label {
-        margin-bottom: 6px;
-        font-weight: bold;
+    footer ul {
+        margin-bottom: 15px;
     }
 
-    input,
-    select {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        font-size: 15px;
+    footer ul:last-child {
+        margin-bottom: 0;
+    }
+
+    .midiaLinks div {
+        flex-direction: row;
+        /* Alinha os ícones de mídia social na horizontal */
+        justify-content: center;
+        /* Centraliza os ícones */
+    }
+
+    .imgLink,
+    .imgLinkFacebbok {
+        margin: 0 10px;
     }
 }
