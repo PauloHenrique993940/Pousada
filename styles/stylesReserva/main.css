@@ -240,3 +240,205 @@ input[type="number"] {
     font-size: 18px;
     border-radius: 50%;
 }
+
+/* Responsividade para telas até 768px */
+@media (max-width: 768px) {
+    main {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .HeaderReserva {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ContainerReserva {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .Quadro {
+        flex-direction: column;
+    }
+
+    .Quadro div {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .avaliacoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card img {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+    .ContainerReserva h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .star {
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .wImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .qtfotos div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .qtfotos div img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imageRodiziosuite {
+        width: 600px;
+        height: 400px;
+    }
+
+    .Container p {
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .ComodidadesContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ComodidadesContainer ul {
+        padding: 0;
+    }
+
+    .Forms {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .Forms h1 {
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    input[type="date"],
+    input[type="number"] {
+        width: 100%;
+    }
+
+    .btn-reservar {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .ContainerCarrossel h1 {
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ContainerCarrossel hr {
+        margin: 0 auto 20px auto;
+    }
+
+    .owl-carousel .owl-nav {
+        top: 30%;
+    }
+
+    footer hr {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+        border: none;
+        border-top: 1px solid #ccc;
+        /* Estilo da linha */
+        margin-top: 50px;
+    }
+
+
+    footer div {
+        flex-direction: column;
+    }
+
+    .imgLink {
+        width: 30px;
+    }
+
+    .imgLinkFacebbok {
+        width: 30px;
+    }
+
+    footer div ul {
+        margin: 0 auto;
+        text-align: left;
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .wImage2 {
+        width: 400px;
+    }
+
+    /* Html suite essencial */
+
+}
+
+.imageRodiziosuite {
+    width: 210px;
+    height: 230px;
+}
