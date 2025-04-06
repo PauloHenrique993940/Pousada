@@ -1,26 +1,27 @@
 @import url("/styles/global.css");
+
 .container {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     width: 60%;
-    
+
 }
 
-@media(max-width: 768px){
-    .container  {
+@media(max-width: 768px) {
+    .container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .depoimentos {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     .quadro {
-       flex-direction: column;
+        flex-direction: column;
     }
 
 
@@ -30,10 +31,10 @@
 
     .Local {
         width: 70%;
-    
+
     }
 
-    
+
 
 }
 
@@ -69,7 +70,7 @@ hr {
 
 }
 
-.imagem img{
+.imagem img {
     height: 100%;
 }
 
@@ -83,8 +84,9 @@ hr {
     margin: auto 0;
     align-items: center;
     justify-content: center;
-   
+
 }
+
 .depoimentos {
     display: flex;
     gap: 20px;
@@ -105,8 +107,8 @@ hr {
 }
 
 .avatar img {
-    border-radius: 50%; 
-    object-fit: cover;  
+    border-radius: 50%;
+    object-fit: cover;
     margin-right: 15px;
 }
 
@@ -117,7 +119,7 @@ hr {
     font-weight: 100;
     margin-bottom: 10px;
     padding-left: 20px;
-    
+
 }
 
 .autor {
@@ -151,7 +153,7 @@ hr {
     border: 2px solid var(--laranja);
     border-radius: 20px;
     background-color: var(--backgroundForms);
-    margin-top: 40px;
+
 }
 
 .formulario h2 {
@@ -162,20 +164,21 @@ hr {
 form {
     display: flex;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 30px;
     justify-content: space-around;
     border-radius: 20px;
     height: auto 0;
     width: 100%;
 }
+
 .formTable {
     width: 400px;
 }
+
 .campo {
     margin-bottom: 15px;
     text-align: left;
     margin-top: 30px;
-    margin-bottom: 20px;
     padding: 20px;
 }
 
@@ -224,6 +227,7 @@ form {
     text-align: center;
     margin-bottom: 20px;
 }
+
 .campo button:hover {
     background-color: #f57c00;
 }
@@ -242,4 +246,27 @@ form {
     height: 429px;
     border-radius: 20px;
     margin-top: 20px;
+}
+
+
+@media (max-width: 425px) {
+
+    form {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
+        justify-content: space-around;
+        border-radius: 20px;
+        height: auto 0;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .formTable {
+        margin-top: 20px;
+    }
+
+    .campo {
+        margin-bottom: 0;
+    }
 }

@@ -201,9 +201,9 @@ img {
         border-radius: 50%; 
         object-fit: cover;  
         margin-right: 15px;
-        width: 70px;
-        height: 40px;
-        display: flex;
+        display: block;
+        height: 30px;
+        width: 50px;
     }
 
     .avatar {
