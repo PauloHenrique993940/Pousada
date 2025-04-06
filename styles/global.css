@@ -153,14 +153,12 @@ img {
 
     .quadro {
         flex-direction: column;
-        /* Empilha imagem e texto */
         margin-bottom: 30px;
     }
 
     .imagem,
     .texto {
         width: 100%;
-        /* Ocupam toda a largura */
     }
 
     .texto {
@@ -170,6 +168,13 @@ img {
 
     .texto h1 {
         font-size: 1.5em;
+    }
+
+    .texto p {
+        font-size: 15px;
+        width: 200px;
+        text-align: left;
+        height: 400px;
     }
 
     .texto hr {
@@ -189,16 +194,20 @@ img {
 
     .depoimentos {
         flex-direction: column;
-        /* Empilha os depoimentos */
         align-items: center;
     }
 
-
+    .avatar img {
+        border-radius: 50%; 
+        object-fit: cover;  
+        margin-right: 15px;
+        width: 70px;
+        height: 40px;
+        display: flex;
+    }
 
     .avatar {
-        width: 80px;
-        height: 80px;
-        margin: 0 auto 10px;
+        width: 100%;
     }
 
     .Perfiltexto p {
@@ -246,11 +255,10 @@ img {
         box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     }
 
-
     .formulario {
         width: 95%;
         margin: 20px auto;
-        padding: 15px;
+        padding: 30px;
         box-sizing: border-box;
     }
 
@@ -278,7 +286,7 @@ img {
     .campo label {
         display: block;
         margin-bottom: 5px;
-        padding-left: 25px;
+        padding-left: 0;
     }
 
     

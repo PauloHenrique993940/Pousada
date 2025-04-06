@@ -438,6 +438,17 @@ input[type="number"] {
 
 }
 
+
+@media (max-width: 425px) {
+    .Quadro div{
+        display: block;
+    }
+
+    .Quadro div img {
+        width: 100%;
+    }
+}
+
 .imageRodiziosuite {
     width: 210px;
     height: 230px;
