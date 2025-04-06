@@ -134,6 +134,7 @@ hr {
     display: flex;
     flex-direction: column;
     margin-top: 0px;
+    max-width: 1200px;
 }
 
 .sectionReserv p {
@@ -148,7 +149,7 @@ hr {
 
 .formulario {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 60%;
+    width: 100%;
     border: 2px solid var(--laranja);
     border-radius: 20px;
     background-color: var(--backgroundForms);
@@ -198,11 +199,11 @@ form {
 }
 
 .campo input[type="date"] {
-    width: 100%;
+    width: auto 0;
 }
 
 .campo select {
-    width: 100%;
+    width: auto 0;
 }
 
 .campo button {
