@@ -142,7 +142,7 @@ img {
 
     .Card p {
         font-size: 0.9em;
-        text-align: center;
+        text-align:left;
         padding: 10px;
     }
 
