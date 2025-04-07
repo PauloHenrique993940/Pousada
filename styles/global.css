@@ -196,14 +196,17 @@ img {
         flex-direction: column;
         align-items: center;
     }
+    .depoimento {
+        flex-direction: column;
+    }
 
     .avatar img {
         border-radius: 50%; 
         object-fit: cover;  
         margin-right: 15px;
-        display: block;
-        height: 30px;
-        width: 50px;
+        height: 70px;
+        width: 70px;
+        
     }
 
     .avatar {
@@ -214,12 +217,14 @@ img {
         font-size: 0.4em;
         margin-bottom: 3px;
         text-align: center;
+        margin-top: 40px;
     }
 
     .Perfiltexto .autor {
         font-size: 0.75em;
         padding-top: 10px;
         padding-left: 50%;
+        font-weight: bold;
     }
 
     /* Section Reserva */
